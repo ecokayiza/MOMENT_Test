@@ -1,0 +1,30 @@
+[project]
+name = "moment-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "momentfm",
+    "numpy>=1.25.2",
+    "pandas>=2.1.0",
+    "scikit-learn>=1.8.0",
+    "torch==2.0.1",
+    "torchvision",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv.sources]
+momentfm = { git = "https://github.com/moment-timeseries-foundation-model/moment.git" }
+torch = { index = "pytorch-gpu" }
+torchvision = { index = "pytorch-gpu" }
+
+[[tool.uv.index]]
+name = "pytorch-gpu"
+url = "https://mirrors.nju.edu.cn/pytorch/whl/cu118"
+explicit = true
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
