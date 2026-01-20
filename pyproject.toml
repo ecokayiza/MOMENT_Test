@@ -20,10 +20,10 @@ torch = { index = "pytorch-gpu" }
 torchvision = { index = "pytorch-gpu" }
 
 [[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[[tool.uv.index]]
 name = "pytorch-gpu"
 url = "https://mirrors.nju.edu.cn/pytorch/whl/cu130"
 explicit = true
-
-[[tool.uv.index]]
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-default = true
