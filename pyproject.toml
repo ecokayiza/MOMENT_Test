@@ -10,8 +10,7 @@ dependencies = [
     "numpy>=1.25.2",
     "pandas>=2.1.0",
     "scikit-learn>=1.8.0",
-    "torch==2.0.1",
-    "torchvision",
+    "torch",
     "tqdm>=4.67.1",
 ]
 
@@ -22,7 +21,7 @@ torchvision = { index = "pytorch-gpu" }
 
 [[tool.uv.index]]
 name = "pytorch-gpu"
-url = "https://mirrors.nju.edu.cn/pytorch/whl/cu118"
+url = "https://mirrors.nju.edu.cn/pytorch/whl/cu130"
 explicit = true
 
 [[tool.uv.index]]
